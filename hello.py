@@ -5,7 +5,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://scott:tiger@localhost/fleet-management"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://default:@ep-calm-hat-a4yy392i-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 
